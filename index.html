@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PracticaSemana10</title>
+        <link rel="stylesheet" href="CSS/index.css">
+    </head>
+
+    <body>
+        <h1 id="tittle">LAPSUS NAPOLEÓN FRANCO</h1>
+
+        <div id="parte1">
+            <h3 id="subtittle">Registre el candidato para la encuesta</h3>
+
+            <input id="id" placeholder="ID" type="text">
+            <input id="nombre" placeholder="Nombre" type="text">
+            <button id="btn">Registrar</button> 
+        </div>
+        
+        <div id="parte2">
+            <h3 id="subtittle">Vota por el candidato usando su ID</h3>
+
+            <input id="id" placeholder="ID" type="text">
+            <button id="btn">Votar</button> 
+
+        </div>
+
+        <div id="parte3">
+            <button id="btn">Ver Candidatos</button> 
+            <button id="btn">Ver Votaciones</button> 
+        </div>
+    </body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase.js"></script>
+
+
+<script>
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyCbEuRQzXfjFTzfoAcnytZeDWIACH84D3A",
+    authDomain: "practicasemana10.firebaseapp.com",
+    databaseURL: "https://practicasemana10-default-rtdb.firebaseio.com",
+    projectId: "practicasemana10",
+    storageBucket: "practicasemana10.appspot.com",
+    messagingSenderId: "989648903315",
+    appId: "1:989648903315:web:03837d347f32328efb8166",
+    measurementId: "G-27Q89RKMT2"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script src="index.js"></script>
+
+</html>
